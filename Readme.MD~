@@ -3,7 +3,7 @@
 
 Automatic medical image analysis, specifically automatic diagnosis through medical imaging is an active research area. Such diagnosis requires one to operate on individual cells. This opens up the problem of accurate cell segmentation from stained medical images. The current repository implements one such method, designed for segmenting White Blood Cells stained with the Jenner-Geimsa Stain. For details regarding the approach please refer to our [paper](http://dl.acm.org/citation.cfm?id=3010043).
 
-![Fig 1. An example image for overlapping cell segmentation.](ALL_Segmentation_Rahul.png)
+![Fig 1. An example image for overlapping cell segmentation.](ALL_Segmentation_Rahul.PNG)
 
 ### Citing this code
 
