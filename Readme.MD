@@ -51,7 +51,7 @@ The code used for creating the training dataset resides in the `Train` subdirect
 
 Please read the word of caution provided in the Disclaimer section. The normalized training images are written to `Data/Normalized_Raw_Images`.
 
-The corresponding folders within `Data/` contain some sample images which serve as illustrative examples. Once the above steps have been performed, run the file `Train/createData.m`. This creates the dataset in the matlab workspace.
+The corresponding folders within `Data/` contain some sample images which serve as illustrative examples.
 
 We have performed the above steps to create a sample dataset which can be readily fed into a classifier. 
 

@@ -46,10 +46,12 @@ The code used for creating the training dataset resides in the `Train` subdirect
 1. Place training images in `Data/Raw_Images`.
 2. Run the file `Utils/utils.m`. This extracts clusters and places them in `Data/Training_Images_Macenko`.
 3. Copy these images into `Data/Training_Images_Macenko_Labelled` and mark the pixels belonging regions of interest with the pencil tool of microsoft paint. The colour must be set to (255,255,255).
+4. Run `Train/createData.m` to create dataset.
+5. Run `Train/train.m` to train a Deep Beleif Network
 
 Please read the word of caution provided in the Disclaimer section. The normalized training images are written to `Data/Normalized_Raw_Images`.
 
-The corresponding folders within `Data/` contain some sample images which serve as illustrative examples. Once the above steps have been performed, run the file `Train/createData.m`. This creates the dataset in the matlab workspace.
+The corresponding folders within `Data/` contain some sample images which serve as illustrative examples.
 
 We have performed the above steps to create a sample dataset which can be readily fed into a classifier. 
 
