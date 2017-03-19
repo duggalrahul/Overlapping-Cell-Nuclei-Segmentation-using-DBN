@@ -1,7 +1,7 @@
 
 ## Overlapping Cell Nuclei Segmentation in Microscopic Images Using Deep Belief Networks
 
-Automatic medical image analysis, specifically automatic diagnosis through medical imaging is an active research area. Such diagnosis requires one to operate on individual cells. This opens up the problem of accurate cell segmentation from stained medical images. The current repository implements one such method, designed for segmenting White Blood Cells stained with the Jenner-Geimsa Stain. For details regarding the approach please refer to our [paper](http://dl.acm.org/citation.cfm?id=3010043).
+Automatic medical image analysis, specifically automatic diagnosis through medical imaging is an active research area. Such diagnosis requires one to operate on individual cells. This opens up the problem of accurate cell segmentation. The current repository implements a method for segmenting White Blood Cells stained with the Jenner-Geimsa Stain. For details regarding the approach please refer to our [paper](http://dl.acm.org/citation.cfm?id=3010043).
 
 ![Fig 1. An example image for overlapping cell segmentation.](ALL_Segmentation_Rahul.PNG)
 
@@ -46,6 +46,8 @@ The code used for creating the training dataset resides in the `Train` subdirect
 1. Place training images in `Data/Raw_Images`.
 2. Run the file `Utils/utils.m`. This extracts clusters and places them in `Data/Training_Images_Macenko`.
 3. Copy these images into `Data/Training_Images_Macenko_Labelled` and mark the pixels belonging regions of interest with the pencil tool of microsoft paint. The colour must be set to (255,255,255).
+4. Run `Train/createData.m` to create dataset.
+5. Run `Train/train.m` to train a Deep Beleif Network
 
 Please read the word of caution provided in the Disclaimer section. The normalized training images are written to `Data/Normalized_Raw_Images`.
 
