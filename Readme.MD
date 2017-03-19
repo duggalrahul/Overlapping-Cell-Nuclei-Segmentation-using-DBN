@@ -29,17 +29,17 @@ If you find this code useful in your research, please consider citing:
 8. [License](#License)
 
 
-## 1. Acknowledgements
+## Acknowledgements
 We would like to thank the authors of the softwares - [DeepLearnToolbox](https://github.com/rasmusbergpalm/DeepLearnToolbox) [2] and [Stain Normalization Toolbox](http://www2.warwick.ac.uk/fac/sci/dcs/research/tia/software/sntoolbox/), which we use in this work.
 
 
-## 2. Disclaimer
+## Disclaimer
 In our original work [3], we used an in-house stain normalization approach which is yet to be published. For demonstration purposes, this code uses another standard normalization approach by Macenko et al [1] as implemented in the Stain normalization toolbox. Since this implementation is optimized for H&E stained images, whereas we adapt it for a different tissue and stain type, reproducibility of results quoted in our paper is not guaranteed.
 
 #### Caution : 
 The stain normalization method by Macenko et al [1] and implemented by the stain normalization toolbox is prone to suffer from stain vector flipping. In such cases you need to perform manual stain vector correction. This correction is outlined in the [Stain-Color-Correction](#Stain-Vector-Correction) section. **Always display the stain normalized image to see if the normalization is performed correctly**!!!
 
-## 3. Training
+## Training
 
 The code used for creating the training dataset resides in the `Train` subdirectory. The specific file which creates the dataset is `Train/createData.m`. This code requires three preliminary steps to be performed which are outlined below.
 
@@ -56,7 +56,7 @@ We have performed the above steps to create a sample dataset which can be readil
 This dataset can be downloaded from [here](https://www.dropbox.com/sh/lja8zkgxyps3p88/AACipzXVowYs8bH6y0i4VExUa?dl=0).
 
 
-## 4. Demo
+## Demo
 
 A pre-trained Deep Belief Network model can be downloaded from [here](https://www.dropbox.com/sh/uj9yk2e6xloq8zv/AACrL8_verKHu3ceKkReAx97a?dl=0).
 
@@ -68,14 +68,14 @@ This model has been trained on 0.3 million pixels sampled from 27 images. For a 
 
 Since the test image is of high resolution [2560x1920], the code requires atleast 16 GB of combined RAM + SWAP memory. In case you don't have the necessary hardware, consider resizing the input image by a factor of 2. However this greatly deteriorates the performance of the method.
 
-## 5. Stain-Vector-Correction
+## Stain-Vector-Correction
 In case the normalization is drastically incorrect, the problem is due to stain vector flipping. To correct for this, we need to manually align the stain vector of reference and query images. This is done through the following steps.
 
 1. Uncomment lines 98-100 in `Stain_Normalization_Toolbox/StainNormalization/NormMacenko.m`.
 2. Run the code to see what the current order of stain vectors is, for the reference and query images. Note down the intended new order. For example if the first and second vectors need to be flipped, then the intended new order should be [2,1,3].
 3. Change line 99, to reflect the intended new order of stain vectors. 
 
-## 6. References
+## References
 
 [1] Macenko, Marc, et al. "A method for normalizing histology slides for quantitative analysis." Biomedical Imaging: From Nano to Macro, 2009. ISBI'09. IEEE International Symposium on. IEEE, 2009.
 
@@ -83,9 +83,9 @@ In case the normalization is drastically incorrect, the problem is due to stain 
 
 [3] Duggal, Rahul, et al. "Overlapping cell nuclei segmentation in microscopic images using deep belief networks." Proceedings of the Tenth Indian Conference on Computer Vision, Graphics and Image Processing. ACM, 2016.
 
-## 7. Contact
+## Contact
 
 For any assistance with the code or for reporting errors, please get in touch at rahulduggal2608 [at] gmail [dot] com.
 
-## 8. License
+## License
 This code is released under the MIT License (refer to the LICENSE file for details).
