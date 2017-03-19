@@ -19,14 +19,14 @@ If you find this code useful in your research, please consider citing:
     }
 
 ### Contents
-1. [Acknowledgements](#Acknowledgements)
-2. [Disclaimer](#Disclaimer)
-3. [Training](#Training)
-4. [Demo](#Demo)
-5. [Stain-Vector-Correction](#Stain-Vector-Correction)
-6. [References](#References)
-7. [Contact](#Contact)
-8. [License](#License)
+1. [Acknowledgements](#acknowledgements)
+2. [Disclaimer](#disclaimer)
+3. [Training](#training)
+4. [Demo](#demo)
+5. [Stain-Vector-Correction](#stain-vector-correction)
+6. [References](#references)
+7. [Contact](#contact)
+8. [License](#license)
 
 
 ## Acknowledgements
