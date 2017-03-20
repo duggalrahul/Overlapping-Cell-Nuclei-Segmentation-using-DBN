@@ -37,7 +37,7 @@ We would like to thank the authors of the softwares - [DeepLearnToolbox](https:/
 In our original work [3], we used an in-house stain normalization approach which is yet to be published. For demonstration purposes, this code uses another standard normalization approach by Macenko et al [1] as implemented in the Stain normalization toolbox. Since this implementation is optimized for H&E stained images, whereas we adapt it for a different tissue and stain type, reproducibility of results quoted in our paper is not guaranteed.
 
 #### Caution : 
-The stain normalization method by Macenko et al [1] and implemented by the stain normalization toolbox is prone to suffer from stain vector flipping. In such cases you need to perform manual stain vector correction. This correction is outlined in the [Stain-Color-Correction](#Stain-Vector-Correction) section. **Always display the stain normalized image to see if the normalization is performed correctly**!!!
+The stain normalization method by Macenko et al [1] and implemented by the stain normalization toolbox is prone to suffer from stain vector flipping. In such cases you need to perform manual stain vector correction. This correction is outlined in the [Stain-Vector-Correction](#stain-vector-correction) section. **Always display the stain normalized image to see if the normalization is performed correctly**!!!
 
 ## Training
 
