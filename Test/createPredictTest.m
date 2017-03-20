@@ -17,7 +17,7 @@ function [predictSet testCompositeImage] = createPredictTest(testImage,boxSide,v
 
         if i+bs<=m & i-bs>0 & j+bs<n & j-bs>0      
             boundingBox = dataPoint(i,j,testImage,boxSide); % get the boundigbox (boxSide x boxSide matrix)
-            predictSet(k,:) = [i j reshape(boundingBox,1,[])];  %position followed by bounding box  
+            predictSet(k,:) = [i j boundingBox];  %position followed by bounding box  
         end
     end
     poolobj = gcp('nocreate');
