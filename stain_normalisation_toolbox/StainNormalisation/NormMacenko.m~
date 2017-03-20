@@ -97,7 +97,7 @@ CS = reshape(CS, [], 3);
 %  correct the problem of stain vector flipping.
 % displayComponents(MSource',CS',MTarget',CT',size(Source), size(Target));
 % CS = CS(:,[2,1,3]); % the intended order of stain vectors should be reflected here
-% displayComponents(MTarget',CS',MTarget',CT',size(Source), size(Target));
+% displayComponents(MSource',CS',MTarget',CT',size(Source), size(Target));
 
 
 % Find the 99th percentile of stain concentration (for each channel)
