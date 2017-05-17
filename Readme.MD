@@ -51,13 +51,6 @@ The code used for creating the training dataset resides in the `Train` subdirect
 
 Please read the word of caution provided in the Disclaimer section. The normalized training images are written to `Data/Normalized_Raw_Images`.
 
-#The corresponding folders within `Data/` contain some sample images which serve as illustrative examples.
-
-#We have performed the above steps to create a sample dataset which can be readily fed into a classifier. 
-
-#This dataset can be obtained by mailing the authors.
-
-
 ## Demo
 
 A pre-trained Deep Belief Network model can be downloaded from [here](https://www.dropbox.com/sh/uj9yk2e6xloq8zv/AACrL8_verKHu3ceKkReAx97a?dl=0).
